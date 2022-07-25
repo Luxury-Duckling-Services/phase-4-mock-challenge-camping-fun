@@ -34,7 +34,8 @@ function NewSignup({ camperId, onAddActivity }) {
           onAddActivity(activity);
         });
       } else {
-        r.json().then((err) => setErrors(err.errors));
+        r.json().then((err) => setErrors(err.errors)
+          );
       }
     });
   }
